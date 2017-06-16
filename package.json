@@ -1,6 +1,6 @@
 {
   "name": "@cloukit/common",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "private": false,
   "config": {
     "access": "public"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/cloukit/common.git"
   },
-  "main": "./dist/index.js",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "author": "codeclou.io",
   "peerDependencies": {
