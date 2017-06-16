@@ -31,12 +31,17 @@ export class AppModule { }
 
 &nbsp;
 
-#### Directive: HasFocus
+#### HasFocusModule - Directive HasFocus
 
+Import the 
 This directive let's you focus an e.g. input-textfield when clicking some button.
 Therefore `[cloukitHasFocus]="boolean"` can be used on the input-textfield.
 
 The following example demonstrates that:
+
+  * :sparkles: [Plunkr Demo](https://plnkr.co/edit/hGOcz0?p=preview)
+  * :sparkles: GIF-Preview
+    * ![](./doc/preview-hasFocus.gif)
 
 ```typescript
 import { Component } from '@angular/core';
@@ -44,15 +49,22 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'itsememario',
   template: `
-  <div>
-    <div (click)="toggleFocus()">click me</div>
+  <div class="demo">
+    <h2>@cloukit/common - HasFocusModule - Directive HasFocus</h2>
+    <button 
+      type="button"
+      (click)="toggleFocus()"
+    >
+      click me
+    </button>
     <br /><br />
     <input
       type="text"
       name="iAmSomeWhereElse"
       [cloukitHasFocus]="hasFocus"
     />
-  </div>`
+  </div>`,
+  styles: [ '.demo { font-family:sans-serif' ],
 })
 export class ItSeMeMarioComponent {
 
