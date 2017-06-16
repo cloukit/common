@@ -1,5 +1,69 @@
 # @cloukit/common
 
+### Install
+
+```bash
+npm install --save @cloukit/common
+```
+
+### Usage
+
+Import the Modules and declare `@NgModule`-imports:
+
+```typescript
+import { HasFocusModule, ClickOutsideModule } from '@cloukit/common';
+
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import { AppComponent } from './app.component';
+
+@NgModule({
+  declarations: [ AppComponent ],
+  imports: [ BrowserModule, FormsModule, HttpModule,
+             HasFocusModule, ClickOutsideModule ],
+  providers: [ ],
+  bootstrap: [ AppComponent ]
+})
+export class AppModule { }
+```
+
+&nbsp;
+
+#### Directive: HasFocus
+
+This directive let's you focus an e.g. input-textfield when clicking some button.
+Therefore `[cloukitHasFocus]="boolean"` can be used on the input-textfield.
+
+The following example demonstrates that:
+
+```typescript
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'itsememario',
+  template: `
+  <div>
+    <div (click)="toggleFocus()">click me</div>
+    <br /><br />
+    <input
+      type="text"
+      name="iAmSomeWhereElse"
+      [cloukitHasFocus]="hasFocus"
+    />
+  </div>`
+})
+export class ItSeMeMarioComponent {
+
+  hasFocus = false;
+
+  toggleFocus(value: boolean) {
+    this.hasFocus = !this.hasFocus;
+  }
+}
+```
+
 
 ### Module Format
 
