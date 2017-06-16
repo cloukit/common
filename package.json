@@ -10,8 +10,8 @@
     "type": "git",
     "url": "https://github.com/cloukit/common.git"
   },
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "module": "./dist/common.module.js",
+  "types": "./dist/common.module.d.ts",
   "author": "codeclou.io",
   "peerDependencies": {
     "@angular/core": "^4.0.0",

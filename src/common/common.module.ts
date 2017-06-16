@@ -3,6 +3,9 @@
  * Copyright (c) 2017 Bernhard Grünewaldt
  * https://github.com/cloukit/common
  */
+export * from './click-outside.component';
+export * from './has-focus.component';
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
