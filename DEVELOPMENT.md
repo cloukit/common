@@ -25,7 +25,7 @@ tsc
 
 ```
 npm --registry https://registry.npmjs.org/ login
-npm --registry https://registry.npmjs.org/ publish
+npm --registry https://registry.npmjs.org/ --access public publish
 ```
 
 (2) Create Git Tag
