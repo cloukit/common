@@ -1,6 +1,6 @@
 {
   "name": "@cloukit/common",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.1-beta",
   "private": false,
   "config": {
     "access": "public"
