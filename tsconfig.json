@@ -1,8 +1,14 @@
 {
   "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es5",
     "module": "commonjs",
-    "declaration": true,
-    "outDir": "dist/"
+    "moduleResolution": "node",
+    "removeComments": true,
+    "sourceMap": true,
+    "outDir": "dist/",
+    "declaration": true
   },
   "files": [
     "./src/common/common.module.ts"
