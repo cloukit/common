@@ -1,6 +1,7 @@
 {
   "name": "@cloukit/multi-select",
   "version": "1.0.0-alpha.1",
+  "private": false,
   "config": {
     "access": "public"
   },
