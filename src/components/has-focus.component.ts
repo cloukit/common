@@ -1,7 +1,7 @@
 /*!
  * @license MIT
- * Copyright (c) 2017 Bernhard Grünewaldt
- * https://github.com/cloukit/common
+ * Copyright (c) 2017 Bernhard Grünewaldt - codeclou.io
+ * https://github.com/cloukit/legal
  */
 import { AfterViewInit, Directive, ElementRef, Input, OnChanges, SimpleChanges } from '@angular/core';
 

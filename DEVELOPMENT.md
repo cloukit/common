@@ -2,11 +2,8 @@
 
 
 **Build**
-```
-npm install
-npm install -g typescript
-tsc
-```
+
+See: https://github.com/cloukit/library-build-chain
 
 &nbsp;
 
@@ -17,13 +14,16 @@ tsc
 (0) Have it build and no pending commits
 
 ```
+git clone https://github.com/cloukit/ng-library-build.git library-build-chain
+cd library-build-chain
 npm install
-tsc
+npm run build
 ```
 
 (1) use this because of npm proxy:
 
 ```
+cd dist/
 npm --registry https://registry.npmjs.org/ login
 npm --registry https://registry.npmjs.org/ --access public publish
 ```
@@ -31,6 +31,7 @@ npm --registry https://registry.npmjs.org/ --access public publish
 (2) Create Git Tag
 
 ```
+cd ../
 git tag -a 0.0.15 -m "rel 0.0.15"
 git push origin 0.0.15
 ```

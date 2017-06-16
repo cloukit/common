@@ -1,7 +1,7 @@
 /*!
  * @license MIT
- * Copyright (c) 2017 Bernhard Grünewaldt
- * https://github.com/cloukit/common
+ * Copyright (c) 2017 Bernhard Grünewaldt - codeclou.io
+ * https://github.com/cloukit/legal
  */
 import { Directive, ElementRef, Output, EventEmitter, HostListener } from '@angular/core';
 
