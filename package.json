@@ -1,6 +1,9 @@
 {
   "name": "@cloukit/multi-select",
   "version": "1.0.0-alpha.1",
+  "config": {
+    "access": "public"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
