@@ -45,11 +45,15 @@ export class PreviewComponent {
   hasFocus2 = false;
   styles = {
     inActive: {
+      borderWidth: '3px',
+      borderStyle: 'solid',
       backgroundColor: '#FAFBFC',
       borderColor: '#F4F5F7',
       width: '300px',
     },
     active: {
+      borderWidth: '3px',
+      borderStyle: 'solid',
       backgroundColor: '#FFFFFF',
       borderColor: '#4C9AFF',
       width: '300px',
