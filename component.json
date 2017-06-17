@@ -1,12 +1,7 @@
 {
   "name": "common",
-  "description": "Bla bla",
+  "description": "Common directives that are used by higher level components such as hasFocus and similar.",
   "versions": [
-    {
-      "version": "1.0.2",
-      "modules": [ "HasFocusModule", "ClickOutsideModule" ],
-      "dependsOnComponents": [ ]
-    },
     {
       "version": "1.0.1",
       "modules": [ "HasFocusModule", "ClickOutsideModule" ],
