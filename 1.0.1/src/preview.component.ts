@@ -37,7 +37,7 @@ export class PreviewComponent {
   // HAS FOCUS
   hasFocus = false;
 
-  toggleFocus(value: boolean) {
+  toggleFocus() {
     this.hasFocus = !this.hasFocus;
   }
 
@@ -66,6 +66,6 @@ export class PreviewComponent {
   }
 
   toggleFocus2(value: boolean) {
-    this.hasFocus2 = !this.hasFocus2;
+    this.hasFocus2 = value;
   }
 }
