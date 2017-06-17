@@ -1,36 +1,13 @@
-import { Component, Output, Input, EventEmitter, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-app',
   template: `
-  <div class="demo">
-    <h2>@cloukit/common - HasFocusModule - Directive HasFocus</h2>
-    <button
-      type="button"
-      (click)="toggleFocus()"
-    >
-      click me
-    </button>
-    <br /><br />
-    <input
-      type="text"
-      name="iAmSomeWhereElse"
-      [cloukitHasFocus]="hasFocus"
-    />
+  <div>
+    <preview></preview>
   </div>`,
-  styles: [ '.demo { font-family:sans-serif' ],
+  styles: [  ],
 })
-export class AppComponent implements OnInit {
-  formGroup: FormGroup = new FormGroup({});
-  constructor() { }
-  ngOnInit() {
+export class AppComponent {
 
-
-  }
-  hasFocus = false;
-
-  toggleFocus(value: boolean) {
-    this.hasFocus = !this.hasFocus;
-  }
 }

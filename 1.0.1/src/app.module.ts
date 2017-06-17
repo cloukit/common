@@ -4,6 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }   from '@angular/forms';
 import { AppComponent } from './app.component';
+import { PreviewComponent } from './preview.component';
 import { HasFocusModule, ClickOutsideModule } from '@cloukit/common';
 
 @NgModule({
@@ -16,7 +17,8 @@ import { HasFocusModule, ClickOutsideModule } from '@cloukit/common';
     ClickOutsideModule
   ],
   declarations: [
-    AppComponent
+    AppComponent,
+    PreviewComponent,
   ],
   providers: [ ],
   bootstrap: [
