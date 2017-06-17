@@ -18,7 +18,7 @@ import { HasFocusModule, ClickOutsideModule } from '@cloukit/common';
   declarations: [
     AppComponent
   ],
-  providers: [ ]
+  providers: [ ],
   bootstrap: [
     AppComponent
   ]
