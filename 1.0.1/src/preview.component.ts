@@ -7,15 +7,17 @@ import { Component } from '@angular/core';
     <h3>HasFocus</h3>
     <button
       type="button"
-      (click)="toggleFocus()"
+      (click)="toggleFocus1()"
     >
-      click me
+      click me to toggle focus on the textfield below
     </button>
     <br /><br />
     <input
       type="text"
+      value="I can be focussed from the outside"
       name="iAmSomeWhereElse"
-      [cloukitHasFocus]="hasFocus"
+      [ngStyle]="focus1Styles()"
+      [cloukitHasFocus]="hasFocus1"
     />
 
 
@@ -23,7 +25,7 @@ import { Component } from '@angular/core';
     <input
       type="text"
       value="click inside me and outside to see the change"
-      [ngStyle]="containerStyles()"
+      [ngStyle]="focus2Styles()"
       (click)="toggleFocus2(true)"
       (cloukitClickOutside)="toggleFocus2(false)"
     />
@@ -31,39 +33,41 @@ import { Component } from '@angular/core';
   styles: [ '.preview { font-family:sans-serif' ],
 })
 export class PreviewComponent {
+  styles = { };
+  hasFocus1 = false;
+  hasFocus2 = false;
 
-  constructor() { }
+  constructor() {
+    this.styles.base = {
+      color: '#000',
+      borderWidth: '3px',
+      borderStyle: 'solid',
+      width: '300px',
+      padding: '8px',
+    };
+    this.styles.inActive = Object.assign({}, this.styles.base, {
+      backgroundColor: '#FAFBFC',
+      borderColor: '#F4F5F7',
+    });
+    this.styles.active = Object.assign({}, this.styles.base, {
+      color: '#fff',
+      backgroundColor: '#64B058',
+      borderColor: '#000',
+      transition: 'color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out',
+    });
+  }
 
   // HAS FOCUS
-  hasFocus = false;
+  focus1Styles() {
+    return this.hasFocus1 ? this.styles.active : this.styles.inActive;
+  }
 
-  toggleFocus() {
-    this.hasFocus = !this.hasFocus;
+  toggleFocus1() {
+    this.hasFocus1 = !this.hasFocus1;
   }
 
   // CLICK OUTSIDE
-  hasFocus2 = false;
-  styles = {
-    inActive: {
-      boxShadow: 'none',
-      borderWidth: '3px',
-      borderStyle: 'solid',
-      backgroundColor: '#FAFBFC',
-      borderColor: '#F4F5F7',
-      width: '300px',
-    },
-    active: {
-      boxShadow: 'none',
-      borderWidth: '3px',
-      borderStyle: 'solid',
-      backgroundColor: '#FFFFFF',
-      borderColor: '#4C9AFF',
-      width: '300px',
-      transition: 'background-color 0.2s ease-in-out, border-color 0.2s ease-in-out',
-    }
-  };
-
-  containerStyles() {
+  focus2Styles() {
     return this.hasFocus2 ? this.styles.active : this.styles.inActive;
   }
 
