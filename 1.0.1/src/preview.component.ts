@@ -45,6 +45,7 @@ export class PreviewComponent {
   hasFocus2 = false;
   styles = {
     inActive: {
+      boxShadow: 'none',
       borderWidth: '3px',
       borderStyle: 'solid',
       backgroundColor: '#FAFBFC',
@@ -52,6 +53,7 @@ export class PreviewComponent {
       width: '300px',
     },
     active: {
+      boxShadow: 'none',
       borderWidth: '3px',
       borderStyle: 'solid',
       backgroundColor: '#FFFFFF',
