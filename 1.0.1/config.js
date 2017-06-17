@@ -5,7 +5,7 @@ System.config({
     experimentalDecorators: true
   },
   map: {
-    app: "./",
+    app: "./src",
     '@angular/core': 'npm:@angular/core@4.0.0/bundles/core.umd.js',
     '@angular/common': 'npm:@angular/common@4.0.0/bundles/common.umd.js',
     '@angular/compiler': 'npm:@angular/compiler@4.0.0/bundles/compiler.umd.js',
