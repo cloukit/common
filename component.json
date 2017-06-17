@@ -1,8 +1,16 @@
 {
   "name": "common",
-  
+  "description": "Bla bla",
   "versions": [
-    "1.0.2",
-    "1.0.1"
+    {
+      "version": "1.0.2",
+      "modules": [ "HasFocusModule", "ClickOutsideModule" ],
+      "dependsOnComponents": [ ]
+    },
+    {
+      "version": "1.0.1",
+      "modules": [ "HasFocusModule", "ClickOutsideModule" ],
+      "dependsOnComponents": [ ]
+    },
   ]
 }
