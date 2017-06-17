@@ -53,7 +53,11 @@ export class PreviewComponent {
       color: '#fff',
       backgroundColor: '#64B058',
       borderColor: '#000',
-      transition: 'color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out',
+      transition: [
+        'color 0.2s ease-in-out, ',
+        'background-color 0.2s ease-in-out, ',
+        'border-color 0.2s ease-in-out '
+      ].join(''),
     });
   }
 
