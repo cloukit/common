@@ -1,18 +1,6 @@
 # @cloukit/common
 
-### Install
-
-```bash
-npm install --save @cloukit/common
-```
-
------
-
-&nbsp;
-
-### Usage
-
-See: https://cloukit.github.io/#/component/common
+**Usage**: https://cloukit.github.io/#/component/common
 
 -----
 
