@@ -4,8 +4,7 @@
   "versions": [
     {
       "version": "1.0.1",
-      "modules": [ "HasFocusModule", "ClickOutsideModule" ],
-      "dependsOnComponents": [ ]
+      "modules": [ "HasFocusModule", "ClickOutsideModule" ]
     }
   ]
 }
