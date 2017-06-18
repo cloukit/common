@@ -1,8 +1,7 @@
-![](https://cloukit.github.io/assets/images/cloukit-logo-square.svg)
+[![](https://cloukit.github.io/assets/images/cloukit-banner-github.svg?v3)](https://cloukit.github.io/)
 
 # common
 
------
 
 &nbsp;
 
@@ -10,7 +9,6 @@
 
 **https://cloukit.github.io/#/component/common**
 
------
 
 &nbsp;
 
