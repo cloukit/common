@@ -1,5 +1,3 @@
-# common
+# @cloukit/common
 
-:bangbang: This is the gh-pages Branch used for component documentation. **GoTo https://cloukit.github.io**.
-
-
+**GoTo https://cloukit.github.io/#/component/common**
