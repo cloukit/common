@@ -8,7 +8,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HasFocusDirective } from './has-focus.component';
 
-
 @NgModule({
   imports: [ BrowserModule, FormsModule ],
   exports: [ HasFocusDirective ],
