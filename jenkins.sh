@@ -1,10 +1,9 @@
 #!/bin/bash
 
-set -e
+#
+# BUILD TRIGGERED BY: https://github.com/codeclou/jenkins-github-webhook-build-trigger-plugin
+#
 
 git clone https://github.com/cloukit/library-build-chain.git library-build-chain
 cd library-build-chain
-npm install
-npm run build
-
-#.
+bash jenkins.sh
