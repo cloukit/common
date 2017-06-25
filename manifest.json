@@ -1,7 +1,16 @@
 {
   "moduleId": "common",
-  "version": "1.0.2",
+  "version": "1.1.0",
+  "description": "Common directives that are used by higher level components such as hasFocus and similar.",
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
   "peerDependencies": {
-    "@angular/core": "^4.0.1"
+    "@angular/core": "^4.0.1",
+    "@angular/common": "^4.0.1",
+    "@angular/platform-browser": "^4.0.1",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
   }
 }
