@@ -5,7 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }   from '@angular/forms';
 import { AppComponent } from './app.component';
 import { PreviewComponent } from './preview.component';
-import { HasFocusModule, ClickOutsideModule } from '@cloukit/common';
+import { CommonModule } from '@cloukit/common';
 
 @NgModule({
   imports: [
@@ -13,8 +13,7 @@ import { HasFocusModule, ClickOutsideModule } from '@cloukit/common';
     FormsModule,
     CommonModule,
     ReactiveFormsModule,
-    HasFocusModule,
-    ClickOutsideModule
+    CommonModule,
   ],
   declarations: [
     AppComponent,
