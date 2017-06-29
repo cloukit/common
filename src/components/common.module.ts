@@ -4,12 +4,12 @@
  * https://github.com/cloukit/legal
  */
 import { NgModule } from '@angular/core';
-import { HasFocusDirective } from './has-focus.component';
-import { ClickOutsideDirective } from './click-outside.component';
+import { CloukitHasFocusDirective } from './has-focus.component';
+import { CloukitClickOutsideDirective } from './click-outside.component';
 
 @NgModule({
   imports: [  ],
-  exports: [ HasFocusDirective, ClickOutsideDirective ],
-  declarations: [ HasFocusDirective, ClickOutsideDirective ],
+  exports: [ CloukitHasFocusDirective, CloukitClickOutsideDirective ],
+  declarations: [ CloukitHasFocusDirective, CloukitClickOutsideDirective ],
 })
-export class CommonModule {}
+export class CloukitCommonModule {}

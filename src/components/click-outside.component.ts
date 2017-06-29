@@ -8,7 +8,7 @@ import { Directive, ElementRef, Output, EventEmitter, HostListener } from '@angu
 @Directive({
   selector: '[cloukitClickOutside]'
 })
-export class ClickOutsideDirective {
+export class CloukitClickOutsideDirective {
 
   @Output()
   public cloukitClickOutside = new EventEmitter<MouseEvent>();

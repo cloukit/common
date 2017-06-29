@@ -8,7 +8,7 @@ import { AfterViewInit, Directive, ElementRef, Input, OnChanges, SimpleChanges }
 @Directive({
   selector: '[cloukitHasFocus]'
 })
-export class HasFocusDirective implements OnChanges, AfterViewInit {
+export class CloukitHasFocusDirective implements OnChanges, AfterViewInit {
   @Input() cloukitHasFocus: boolean;
 
   constructor(private el: ElementRef) { }
