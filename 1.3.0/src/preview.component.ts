@@ -2,34 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'preview',
-  template: `
-  <div class="preview">
-    <h3>HasFocus</h3>
-    <button
-      type="button"
-      (click)="toggleFocus1()"
-    >
-      click me to toggle focus on the textfield below
-    </button>
-    <br /><br />
-    <input
-      type="text"
-      value="I can be focussed from the outside"
-      name="iAmSomeWhereElse"
-      [ngStyle]="focus1Styles()"
-      [cloukitHasFocus]="hasFocus1"
-    />
-
-
-    <h3>ClickOutside</h3>
-    <input
-      type="text"
-      value="click inside me and outside to see the change"
-      [ngStyle]="focus2Styles()"
-      (click)="toggleFocus2(true)"
-      (cloukitClickOutside)="toggleFocus2(false)"
-    />
-  </div>`,
+  templateUrl: './src/preview.component.html',
   styles: [ '.preview { font-family:sans-serif' ],
 })
 export class PreviewComponent {
