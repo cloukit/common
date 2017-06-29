@@ -5,7 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }   from '@angular/forms';
 import { AppComponent } from './app.component';
 import { PreviewComponent } from './preview.component';
-import { CommonModule } from '@cloukit/common';
+import { CloukitCommonModule } from '@cloukit/common';
 
 @NgModule({
   imports: [
@@ -13,7 +13,7 @@ import { CommonModule } from '@cloukit/common';
     FormsModule,
     CommonModule,
     ReactiveFormsModule,
-    CommonModule,
+    CloukitCommonModule
   ],
   declarations: [
     AppComponent,
