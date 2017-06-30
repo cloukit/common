@@ -5,11 +5,18 @@
  */
 import { Directive, ElementRef, Output, EventEmitter, HostListener } from '@angular/core';
 
+/**
+ * Click outside directive with EventEmitter.
+ */
 @Directive({
   selector: '[cloukitClickOutside]'
 })
 export class CloukitClickOutsideDirective {
 
+  /**
+   * When directive is used on a textfield the EventEmitter
+   * emits an event each time the outside of the textfield is clicked.
+   */
   @Output()
   public cloukitClickOutside = new EventEmitter<MouseEvent>();
 
