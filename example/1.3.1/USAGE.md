@@ -17,7 +17,7 @@ will be focused.
 ```
 
 Use the **(cloukitClickOutside)** directive on any dom element like so.
-You can trigger a functions once the outside of the element is clicked.
+You can trigger a function once the outside of the element is clicked.
 
 ```html
 <div
