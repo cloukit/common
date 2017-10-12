@@ -33,7 +33,7 @@ Of yourse you will need to import the `CommomToggleModule` and inject it into yo
 
 ```typescript
 // (1) Import the Module
-import { CommomToggleModule } from '@cloukit/common';
+import { CloukitCommonModule } from '@cloukit/common';
 
 @NgModule({
   imports: [
@@ -41,7 +41,7 @@ import { CommomToggleModule } from '@cloukit/common';
     FormsModule,
     ReactiveFormsModule,
     // (2) Register it under 'imports'
-    CommomToggleModule
+    CloukitCommonModule
   ],
   declarations: [ /* ... */ ],
   providers: [ /* ... */ ],
