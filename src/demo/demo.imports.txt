@@ -1,0 +1,7 @@
+/** WILL BE INJECTED INTO ./dist-demo/src/app/app.module.ts **/
+import { CloukitCommonModule } from '../index';
+
+// ngDeclarations
+ngImports.push(CloukitCommonModule);
+// ngProviders
+// ngBootStrap
