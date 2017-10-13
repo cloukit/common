@@ -28,24 +28,4 @@ You can trigger a function once the outside of the element is clicked.
 ```
 
 
-Of yourse you will need to import the `CommomToggleModule` and inject it into your main `NgModule`.
-
-
-```typescript
-// (1) Import the Module
-import { CloukitCommonModule } from '@cloukit/common';
-
-@NgModule({
-  imports: [
-    BrowserModule,
-    FormsModule,
-    ReactiveFormsModule,
-    // (2) Register it under 'imports'
-    CloukitCommonModule
-  ],
-  declarations: [ /* ... */ ],
-  providers: [ /* ... */ ],
-  bootstrap: [ /* ... */ ]
-})
-export class AppModule {}
-```
+Please note that you have to import [`CommomToggleModule`](https://cloukit.github.io/#/component/theme) and `CloukitToggleModule`.
