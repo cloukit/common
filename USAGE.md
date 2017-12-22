@@ -28,4 +28,4 @@ You can trigger a function once the outside of the element is clicked.
 ```
 
 
-Please note that you have to import [`CommomToggleModule`](https://cloukit.github.io/#/component/theme) and `CloukitToggleModule`.
+Please note that you have to import `CloukitCommonModule`.
