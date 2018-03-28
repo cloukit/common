@@ -1,6 +1,35 @@
 <!-- !!! will be dynamically included into cloukit.github.io component doc !!! -->
 <!-- !!! DO NOT USE UNECESSARY MARRKUP THAT BREAKS THE CORPORATE DESIGN !!! -->
 
+### Initial Setup
+
+Import the needed modules in your main module.
+
+```typescript
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CloukitCommonModule } from '@cloukit/common';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    CloukitCommonModule,
+  ],
+  providers: [ ],
+  bootstrap: [ AppComponent ],
+})
+// ....
+```
+
+&nbsp;
+
+### Use the directives
+
 Use the **\[cloukitHasFocus\]** directive on any input element like so.
 Where `hasFocus1` is a `boolean`. Once the boolean value is true, the element
 will be focused.
@@ -27,5 +56,4 @@ You can trigger a function once the outside of the element is clicked.
 </div>
 ```
 
-
-Please note that you have to import `CloukitCommonModule`.
+For more complex examples see the source code of the Demo Stories above.
