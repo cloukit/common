@@ -1,0 +1,11 @@
+<div class="demo">
+
+  <input
+    type="text"
+    value="click inside me and outside to see the change"
+    [ngStyle]="focusStyles()"
+    (click)="toggleFocus(true)"
+    (cloukitClickOutside)="toggleFocus(false)"
+  />
+
+</div>
