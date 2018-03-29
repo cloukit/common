@@ -59,3 +59,23 @@ You can trigger a function once the outside of the element is clicked.
 ```
 
 For more complex examples see the source code of the Demo Stories above.
+
+&nbsp;
+
+### Version Compatibilty
+
+You can read the [release comments](https://github.com/cloukit/common/releases) for full details.
+
+Please mind the the compatibility chart
+
+| Angular Version | Cloukit Component Version |
+|-----------------|---------------------------|
+| >=5.0.0         | 1.6.1 - current           |
+| >=4.0.0         | 1.1.0 - 1.6.0             |
+
+To install a specific version use:
+
+```
+yarn add @cloukit/common@1.6.0
+```
+
