@@ -62,7 +62,7 @@ For more complex examples see the source code of the Demo Stories above.
 
 &nbsp;
 
-### Version Compatibilty
+### Version Compatibility
 
 You can read the [release comments](https://github.com/cloukit/common/releases) for full details.
 
