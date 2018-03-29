@@ -9,6 +9,7 @@ Import the needed modules in your main module.
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
+// (1) Package Imports
 import { CloukitCommonModule } from '@cloukit/common';
 
 @NgModule({
@@ -18,6 +19,7 @@ import { CloukitCommonModule } from '@cloukit/common';
   imports: [
     CommonModule,
     ReactiveFormsModule,
+    // (2) Register Imports
     CloukitCommonModule,
   ],
   providers: [ ],
