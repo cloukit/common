@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { DemoComponent } from '../demo.component';
 
 @Component({
-  selector: 'story-00-has-focus',
+  selector: 'cloukit-story-00-has-focus',
   templateUrl: './story-00-has-focus.html',
   styles: [ ].concat(DemoComponent.sharedStyles),
 })
