@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { DemoComponent } from '../demo.component';
 
 @Component({
   selector: 'cloukit-story-01-click-outside',
   templateUrl: './story-01-click-outside.html',
-  styles: [ ].concat(DemoComponent.sharedStyles),
+  styleUrls: [ '../demo.styles.css' ]
 })
 export class Story01Component {
   styles: any = { };

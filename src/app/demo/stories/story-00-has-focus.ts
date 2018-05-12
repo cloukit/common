@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { DemoComponent } from '../demo.component';
 
 @Component({
   selector: 'cloukit-story-00-has-focus',
   templateUrl: './story-00-has-focus.html',
-  styles: [ ].concat(DemoComponent.sharedStyles),
+  styleUrls: [ '../demo.styles.css' ]
 })
 export class Story00Component {
 
